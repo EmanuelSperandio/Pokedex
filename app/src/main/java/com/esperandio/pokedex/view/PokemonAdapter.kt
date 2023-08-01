@@ -42,7 +42,6 @@ class PokemonAdapter (
                 var pokeSprite = item.sprite.toString()
                 var pokeSpriteFinal : String = pokeSprite.replace("PokemonSprite(front_default=","").replace(")","")
                 Glide.with(itemView.context).load(pokeSpriteFinal).into(pokemonSprite)
-                Log.i("X", "Testando")
             }
 
         }
