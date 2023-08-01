@@ -38,7 +38,7 @@ class PokemonAdapter (
 
             item?.let {
                 pokemonID.text = "#${item.formattedNumber}"
-                pokemonName.text = item.name
+                pokemonName.text = "${item.formattedName}"
                 var pokeSprite = item.sprite.toString()
                 var pokeSpriteFinal : String = pokeSprite.replace("PokemonSprite(front_default=","").replace(")","")
                 Glide.with(itemView.context).load(pokeSpriteFinal).into(pokemonSprite)

@@ -7,4 +7,5 @@ data class Pokemon(
     )
 {
     val formattedNumber = id.toString().padStart(3,'0')
+    val formattedName = name.replaceFirstChar { it.uppercase() }
 }
